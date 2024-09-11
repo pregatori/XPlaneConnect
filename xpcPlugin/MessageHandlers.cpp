@@ -859,7 +859,7 @@ namespace XPC
 	void MessageHandlers::HandleView(const Message& msg)
 	{
 		// Update Log
-		Log::FormatLine(LOG_TRACE, "VIEW", "Message Received(Conn %i)", connection.id);
+		Log::FormatLine(LOG_TRACE, "VIEW", "Message Received(Conn %i), not handled by this plugin version", connection.id);
 		
 		bool enable_advanced_camera = false;
 		
@@ -886,9 +886,10 @@ namespace XPC
 		int view_type;
 		memcpy(&view_type, buffer + 5, 4);
 		
+        /* Ignored because not compatible with XPlane SDK 4.0
 		// set view by calling the corresponding key stroke
 		XPLMCommandKeyStroke(view_type);
-		
+		*/
 		
 		VIEW_TYPE viewRunway = VIEW_TYPE::XPC_VIEW_RUNWAY;
 		VIEW_TYPE viewChase	 = VIEW_TYPE::XPC_VIEW_CHASE;

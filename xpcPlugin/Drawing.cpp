@@ -234,10 +234,11 @@ namespace XPC
 	void Drawing::ClearWaypoints()
 	{
 		numWaypoints = 0;
+        /* Commented to compile arm64 compatible plugin version
 		if (routeEnabled)
 		{
 			XPLMUnregisterDrawCallback(RouteDrawCallback, xplm_Phase_Objects, 0, NULL);
-		}
+		}*/
 		return;
 	}
 
@@ -254,10 +255,11 @@ namespace XPC
 		}
 		numWaypoints = finalNumWaypoints;
 
+        /* Commented to compile arm64 version of code
 		if (!routeEnabled)
 		{
 			XPLMRegisterDrawCallback(RouteDrawCallback, xplm_Phase_Objects, 0, NULL);
-		}
+		}*/
 		if (!planeXref)
 		{
 			planeXref = XPLMFindDataRef("sim/flightmodel/position/local_x");
