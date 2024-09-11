@@ -1,4 +1,11 @@
 # X-Plane Connect
+
+### Architecture
+Adapted version of the XPCPlugin compatible with XPlane 4.1.0 SDK. For this the DrawingCallbacks method and Handleview functions of XPX have been disabled in this version (I was not using them). Feel free to adapt this code to integrate these functions to make XPC fully compatible with the 4.1.0 SDK.
+
+This upgrade allowed me to compile a mac.xpl file compatible with arm64 MacOS architectures running with XPlane12 using macOS version 14.6 (Sonoma). This avoided me to use Rosetta (Intel emulator) to run XPlane12, compatible with older versions of XPC and run XPlane12 a lot faster.
+
+---------------
 The X-Plane Connect (XPC) Toolbox is an open source research tool used to
 interact with the commercial flight simulator software X-Plane. XPC allows users
 to control aircraft and receive state information from aircraft simulated in
