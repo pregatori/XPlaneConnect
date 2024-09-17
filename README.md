@@ -5,6 +5,8 @@ Adapted version of the XPCPlugin compatible with XPlane 4.1.0 SDK. For this the 
 
 This upgrade allowed me to compile a mac.xpl file compatible with arm64 MacOS architectures running with XPlane12 using macOS version 14.6 (Sonoma). This avoided me to use Rosetta (Intel emulator) to run XPlane12, compatible with older versions of XPC and run XPlane12 a lot faster.
 
+Find a compiled version of "mac.xpl" compatible with Intel and arm64 macOS under the Release Section. To install it follow the instructions in the original XPC plugin (simply copy the file in the right folder in XPlane12).
+
 ---------------
 The X-Plane Connect (XPC) Toolbox is an open source research tool used to
 interact with the commercial flight simulator software X-Plane. XPC allows users
